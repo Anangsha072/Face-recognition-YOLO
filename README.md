@@ -1,4 +1,5 @@
 🧑‍💻 Person Matching Using YOLO and Face Recognition
+
 📌 Overview
 
 This project demonstrates a person detection and face-matching system by combining YOLO object detection with face recognition. The system detects people in a video and identifies whether any detected person matches a given reference image.
@@ -36,13 +37,9 @@ OpenCV
 NumPy
 
 📂 Project Structure
-face_trainer_project/
-│
-├── matching_person.py        # Main script
-├── image2.jpg                # Reference image
-├── video3.mp4                # Input video
-├── yolov5s.pt                # YOLO model weights
-├── README.md                 # Project documentation
+
+<img width="453" height="220" alt="image" src="https://github.com/user-attachments/assets/cc9b6a87-772b-4300-ba36-c39030e58b66" />
+
 
 ⚙️ How It Works
 
@@ -67,6 +64,7 @@ Person detected if no face is found
 Results are displayed in real time with bounding boxes and labels.
 
 ▶️ How to Run
+
 1️⃣ Install Dependencies
 pip install ultralytics face_recognition opencv-python numpy
 
