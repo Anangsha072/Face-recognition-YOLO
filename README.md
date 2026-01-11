@@ -1,44 +1,105 @@
-Person Matching Using YOLO and Face Recognition
+🧑‍💻 Person Matching Using YOLO and Face Recognition
+📌 Overview
 
-This script implements a person detection and face-matching system by combining YOLO object detection with face recognition techniques.
+This project demonstrates a person detection and face-matching system by combining YOLO object detection with face recognition. The system detects people in a video and identifies whether any detected person matches a given reference image.
 
-First, a reference image (image2.jpg) is loaded and processed using the face_recognition library to extract a facial encoding. This encoding acts as a biometric identity of the target person. If no face is detected in the reference image, the program safely exits.
+A reference face image is used to extract facial features, which are then compared with faces detected inside person bounding boxes in a video stream.
 
-Next, a pre-trained YOLO model (yolov5s.pt) is used to detect persons in a given video (video3.mp4). YOLO efficiently locates all human figures in each video frame by drawing bounding boxes around detected persons.
+🚀 Features
 
-For every detected person:
+Detects people in video using YOLO
 
-The person’s region is cropped from the frame.
+Extracts facial features using face_recognition (dlib)
 
-The cropped image is converted to RGB format.
+Matches detected faces with a reference image
+
+Real-time bounding box visualization
+
+Color-coded identity labels
+
+🟢 Matched person
+
+🔴 Unknown person
+
+🟡 Person detected (face not visible)
+
+🛠️ Technologies Used
+
+Python
+
+YOLO (Ultralytics)
+
+face_recognition
+
+OpenCV
+
+NumPy
+
+📂 Project Structure
+face_trainer_project/
+│
+├── matching_person.py        # Main script
+├── image2.jpg                # Reference image
+├── video3.mp4                # Input video
+├── yolov5s.pt                # YOLO model weights
+├── README.md                 # Project documentation
+
+⚙️ How It Works
+
+A reference image is loaded and its face encoding is extracted.
+
+YOLO detects all persons in each frame of the input video.
+
+Each detected person is cropped from the frame.
 
 Facial encodings are extracted from the cropped region.
 
-If a face is found, it is compared with the reference face encoding.
+The extracted face is compared with the reference face.
 
-If the similarity is within a defined tolerance, the person is labeled “MATCHED”; otherwise, “Unknown”.
+The person is labeled as:
 
-If no face is detected in the crop, the label “Person detected” is displayed.
+MATCHED if the face matches the reference
 
-The system visually displays the results in real time by:
+Unknown if the face does not match
 
-Drawing bounding boxes around detected persons
+Person detected if no face is found
 
-Showing identification labels with different colors:
+Results are displayed in real time with bounding boxes and labels.
 
-🟢 Green → Matched person
+▶️ How to Run
+1️⃣ Install Dependencies
+pip install ultralytics face_recognition opencv-python numpy
 
-🔴 Red → Unknown person
+2️⃣ Place Required Files
 
-🟡 Yellow → Person detected but face not visible
+Reference image → image2.jpg
 
-This approach is useful for identity verification, surveillance, access control, and person re-identification tasks, where a specific individual needs to be tracked or recognized within video footage.
+Video file → video3.mp4
 
-🎯 Key Technologies Used
+YOLO weights → yolov5s.pt
 
-YOLO (You Only Look Once) for real-time person detection
+3️⃣ Run the Script
+python matching_person.py
 
-face_recognition (dlib-based) for facial feature extraction and comparison
 
-OpenCV for video processing and visualization
+Press q to exit the video window.
+
+🎯 Use Cases
+
+Surveillance systems
+
+Access control
+
+Person re-identification
+
+Video-based identity verification
+
+⚠️ Limitations
+
+Face recognition accuracy depends on lighting and face visibility
+
+Small or blurred faces may not be detected
+
+Matching works best with frontal face images
+
 <img width="468" height="853" alt="image" src="https://github.com/user-attachments/assets/abcc8ecc-5859-4dce-8d2b-8ab0ab86b202" />
