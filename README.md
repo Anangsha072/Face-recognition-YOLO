@@ -1,6 +1,6 @@
 # 🧑‍💻 Person Matching Using YOLO and Face Recognition
 
-##📌 Overview##
+# 📌 Overview
 
 This project demonstrates a person detection and face-matching system by combining YOLO object detection with face recognition. The system detects people in a video and identifies whether any detected person matches a given reference image.
 
