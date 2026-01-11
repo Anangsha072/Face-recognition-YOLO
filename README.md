@@ -6,7 +6,7 @@ This project demonstrates a person detection and face-matching system by combini
 
 A reference face image is used to extract facial features, which are then compared with faces detected inside person bounding boxes in a video stream.
 
-🚀 Features
+## 🚀 Features
 
 Detects people in video using YOLO
 
@@ -24,7 +24,7 @@ Color-coded identity labels
 
 🟡 Person detected (face not visible)
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 Python
 
@@ -41,7 +41,7 @@ NumPy
 <img width="453" height="220" alt="image" src="https://github.com/user-attachments/assets/cc9b6a87-772b-4300-ba36-c39030e58b66" />
 
 
-⚙️ How It Works
+## ⚙️ How It Works
 
 A reference image is loaded and its face encoding is extracted.
 
@@ -63,7 +63,7 @@ Person detected if no face is found
 
 Results are displayed in real time with bounding boxes and labels.
 
-▶️ How to Run
+## ▶️ How to Run
 
 1️⃣ Install Dependencies
 pip install ultralytics face_recognition opencv-python numpy
@@ -76,13 +76,13 @@ Video file → video3.mp4
 
 YOLO weights → yolov5s.pt
 
-3️⃣ Run the Script
+## 3️⃣ Run the Script
 python matching_person.py
 
 
 Press q to exit the video window.
 
-🎯 Use Cases
+## 🎯 Use Cases
 
 Surveillance systems
 
@@ -92,7 +92,7 @@ Person re-identification
 
 Video-based identity verification
 
-⚠️ Limitations
+## ⚠️ Limitations
 
 Face recognition accuracy depends on lighting and face visibility
 
