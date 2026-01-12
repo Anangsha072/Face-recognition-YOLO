@@ -63,6 +63,8 @@ Person detected if no face is found
 
 Results are displayed in real time with bounding boxes and labels.
 
+<img width="468" height="853" alt="image" src="https://github.com/user-attachments/assets/abcc8ecc-5859-4dce-8d2b-8ab0ab86b202" />
+
 ## ▶️ How to Run
 
 1️⃣ Install Dependencies
@@ -100,4 +102,4 @@ Small or blurred faces may not be detected
 
 Matching works best with frontal face images
 
-<img width="468" height="853" alt="image" src="https://github.com/user-attachments/assets/abcc8ecc-5859-4dce-8d2b-8ab0ab86b202" />
+
